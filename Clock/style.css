@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+html {
+  transition: all 0.5s ease-in;
+}
+html.dark {
+  background-color: #000;
+  color: #fff;
+
+  .needle.hour,
+  .needle.minute {
+    background-color: #fff;
+  }
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.toggle {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  position: absolute;
+  top: 100px;
+  border-radius: 3px;
+  height: 30px;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-style: double;
+}
+
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.needle {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 65px;
+  width: 3px;
+  transform-origin: bottom center;
+  transition: all 0.5s ease-in linear;
+}
+
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+}
+.needle.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+}
+.needle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+  background-color: coral;
+}
+
+.center-point {
+  background-color: coral;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.time {
+  font-size: 56px;
+}
+
+.date {
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+.date .circle {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 18px;
+  transition: all 0.5s ease-in;
+  font-size: 12px;
+}
+
+.analog {
+  width: 255px;
+}
+
+.number {
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.number.top {
+  left: 50%;
+}
+
+.number.right {
+  top: 42%;
+  right: 0;
+}
+
+.number.bottom {
+  top: 85%;
+  left: 50%;
+}
+
+.number.left {
+  top: 42%;
+  left: 0%;
+}
