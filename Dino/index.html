@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Dino</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Dino game</h1>
+    <div class="Instructions">
+      <h3>Instructions:</h3>
+      <p>
+        Click Space bar <img src="./img/space-bar.svg" class="icon" /> or
+        <img src="./img/Arrow-up.svg" class="icon" /> to jump
+      </p>
+    </div>
+    <img id="resetImage" src="./img/game-over.png" onclick="resetGame()" />
+
+    <canvas id="dinoBoard"></canvas>
+  </body>
+</html>

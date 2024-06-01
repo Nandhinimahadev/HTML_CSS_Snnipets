@@ -1,0 +1,33 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+#dinoBoard {
+  background-color: #cccccc;
+}
+h3 {
+  color: blue;
+  justify-content: space-around;
+}
+.Instructions p {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.Instructions p img.icon {
+  width: 20px;
+  height: auto;
+  padding-bottom: 20px;
+}
+#resetImage {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+canvas {
+  padding: 20px;
+}
