@@ -5,30 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
-    <div class="weatherContainer">
-      <h2 class="Heading">Weather app</h2>
-      <div class="search">
-        <form action="" id="weatherForm">
-          <input
-            type="text"
-            id="weatherInput"
-            placeholder="Please Enter your city"
-          />
-          <button class="searchBtn" type="submit"></button>
-          <ul>
-            <li><i class="fa-solid fa-magnifying-glass"></i></li>
-          </ul>
-        </form>
-      </div>
-      <h2 id="city"></h2>
-      <img src="." alt="weatherImage" />
-      <p class="weatherHead" id="weatherHead"></p>
-      <h2 id="temp"><span class="temp"></span></h2>
-      <div class="todayDate"></div>
-      <div class="todayTime"></div>
+    <div class="container">
+      <h1>Weather App</h1>
+      <form id="weatherForm">
+        <input
+          type="text"
+          id="weatherInput"
+          placeholder="Enter city name"
+          required
+        />
+        <button type="submit">Get Weather</button>
+        <div id="weatherResult" class="weatherResult"></div>
+      </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
