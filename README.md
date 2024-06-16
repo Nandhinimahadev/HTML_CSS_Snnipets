@@ -9,3 +9,6 @@ Here it has the collection of HTML css projects
 
 2.Dino game 
 ![image](https://github.com/Nandhinimahadev/HTML_CSS_Snnipets/assets/111035749/52153a64-cad6-4473-af6b-4e96785919cd)
+
+
+3.Weather app
